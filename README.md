@@ -80,8 +80,8 @@ module "example-usage" {
 | newrelic\_collector\_endpoint | This is the New Relic collector endpoint. The URL changes based on your account region (US/EU), and can be found on https://docs.newrelic.com/docs/infrastructure/amazon-integrations/aws-integrations-list/aws-metric-stream/#manual-setup. | `string` | - | yes |
 | name\_prefix | A prefix to prepend to the name of all resources created by this module. | `string` | empty ("") | no |
 | name\_suffix | A suffix to append to the name of all resources created by this module. | `string` | empty ("") | no |
-| cloudwatch\_metric\_stream\_include\_filter | List of namespaces to include from the CloudWatch Metric Stream. Mutually exclusive with cloudwatch_metric_stream_exclude_filter. | `list` | empty ([]) | no |
-| cloudwatch\_metric\_stream\_exclude\_filter | List of namespaces to exclude from the CloudWatch Metric Stream. Mutually exclusive with cloudwatch_metric_stream_include_filter. | `list` | empty ([]) | no |
+| cloudwatch\_metric\_stream\_include\_filter | List of namespaces to include from the CloudWatch Metric Stream. Mutually exclusive with `cloudwatch_metric_stream_exclude_filter`. | `list` | empty ([]) | no |
+| cloudwatch\_metric\_stream\_exclude\_filter | List of namespaces to exclude from the CloudWatch Metric Stream. Mutually exclusive with `cloudwatch_metric_stream_include_filter`. | `list` | empty ([]) | no |
 
 ## Outputs
 
