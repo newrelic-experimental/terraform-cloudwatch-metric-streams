@@ -24,7 +24,7 @@ Terraform v0.12 or above is required.
 
 ## Notes
 
-* Although this module provisions the IAM role and policy required for linking your AWS and New Relic accounts together, it does not do so automatically, and will have to been done either manually in New Relic UI, or using NerdGraph. See full details under "Getting Started" below.
+* Although this module provisions the IAM role and policy required for linking your AWS and New Relic accounts together, it does not do so automatically, and will have to be done either manually in New Relic UI, or using NerdGraph. See more details under "Getting Started" below.
 
 * Please make sure to use the correct New Relic collector endpoint for your account using the variable `newrelic_collector_endpoint`. The correct URL can be found [here](https://docs.newrelic.com/docs/infrastructure/amazon-integrations/aws-integrations-list/aws-metric-stream/#manual-setup).
 
