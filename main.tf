@@ -33,6 +33,10 @@ resource "aws_iam_role" "kinesis-firehose-stream-role" {
 
 resource "aws_s3_bucket" "kinesis-firehose-stream-failed-data" {
   bucket = "${var.name_prefix}cloudwatch-metric-stream-failed-data${var.name_suffix}"
+}
+
+resource "aws_s3_bucket_acl" "kinesis-firehose-stream-failed-data-bucket-acl" {
+  bucket = aws_s3_bucket.kinesis-firehose-stream-failed-data.id
   acl    = "private"
 }
 
