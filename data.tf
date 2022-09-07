@@ -52,8 +52,8 @@ data "aws_iam_policy_document" "kinesis-firehose-stream-role-s3-policy" {
       "s3:AbortMultipartUpload",
       "s3:GetBucketLocation",
       "s3:GetObject",
-      "s3:ListBucke",
-      "s3:ListBucketMultipartUpload",
+      "s3:ListBucket",
+      "s3:ListBucketMultipartUploads",
       "s3:PutObject"
     ]
 
